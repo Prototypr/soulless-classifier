@@ -1,0 +1,14 @@
+{
+  "classes": [
+    "suno_v2",
+    "suno_v3_x",
+    "suno_v4",
+    "suno_v4_5",
+    "suno_v5_5",
+    "udio"
+  ],
+  "threshold": 0.5669836605519253,
+  "feature_dim": 185,
+  "cv_accuracy": 0.7983104540654699,
+  "n_train": 1894
+}

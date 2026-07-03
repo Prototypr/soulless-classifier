@@ -1,0 +1,14 @@
+# Run the audio classifier locally with one command:
+#   npm run classifier:up      (build + start on http://localhost:8000)
+#   npm run classify:audio     (the Next cron then classifies against it)
+#   npm run classifier:down
+services:
+  classifier:
+    build: .
+    container_name: soulless-classifier
+    ports:
+      - '8000:8000'
+    # Drop a trained model next to this file to leave baseline mode:
+    #   volumes:
+    #     - ./model.joblib:/app/model.joblib:ro
+    restart: unless-stopped

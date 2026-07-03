@@ -1,0 +1,15 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+librosa==0.10.2.post1
+# Pin the whole native stack so pip can't pull numba/scipy/soxr builds that are
+# incompatible with numpy 1.26 (those segfault librosa on arm64 containers).
+numpy==1.26.4
+numba==0.60.0
+llvmlite==0.43.0
+scipy==1.13.1
+soxr==0.5.0.post1
+audioread==3.0.1
+requests==2.32.3
+pydantic==2.10.4
+joblib==1.4.2
+scikit-learn==1.5.2

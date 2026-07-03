@@ -1,0 +1,11 @@
+# Optional "real model" ensemble (all MIT-licensed). Install on top of
+# requirements.txt to upgrade the sidecar from baseline → ensemble:
+#   pip install -r requirements-sonics.txt
+# Detectors auto-load if present:
+#   • SONICS SpecTTTra (HF)         — set USE_SONICS=0 to disable
+#   • lofcz vocoder-fakeprint ONNX  — models/ai_music_detector.onnx (USE_LOFCZ=0 to disable)
+#     download: huggingface_hub.hf_hub_download("lofcz/ai-music-detector","ai_music_detector.onnx")
+torch
+torchaudio
+onnxruntime
+git+https://github.com/awsaf49/sonics.git
